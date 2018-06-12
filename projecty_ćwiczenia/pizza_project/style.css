@@ -1,0 +1,177 @@
+body{
+	margin:0;
+	width:100%;
+	height:auto;
+	display:block;
+	background-image:url(./img/bg11.png);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	background-size: 123%;
+}
+
+/*header:*/
+
+#images{
+	width:250px;
+	height:250px;
+}
+	
+#brand{
+	float:left;
+}
+		
+div.image{
+	background-color:transparent;
+}
+		
+nav, ul, li, a{
+	float:left;
+	text-decoration:none;
+	list-style-type:none;
+	padding-right:25px;
+	color:#d2bb95;
+}	 
+
+
+nav ul li a:hover {
+    color: #e6dac7;
+}
+
+nav ul li a:active {
+    color: #b39768;
+}
+
+.div{
+	padding-top:250px;
+	color:#d2bb95;
+}
+
+h1{
+	margin:0px 15px;
+	padding:30px;
+	text-align:left;
+}
+
+.image div img{
+	width:340px;
+	height:230px;
+	border-radius:40px;
+	padding:30px;
+	float:left;
+	margin:0px 15px;
+}
+
+div>img{
+		opacity:0.7;
+		
+}
+div>img:hover{
+		opacity:1;
+}
+
+/*po carusel zmodyfykowanie*/
+
+h2{
+	color:#ff0000;
+	text-align:center;
+}
+
+p, #p{
+	text-align:center;
+	color:#fff;
+	font-size:18px;
+}
+
+h3{
+	color:#ff0000;
+}
+
+.border{
+	padding:50px 130px;
+}
+
+.ground{
+	background-image:url(./img/bg1.jpg);
+	background-attachment:fixed;
+	background-size:100%;
+	background-repeat:no-repeat;
+	float:left;
+}
+
+.ground2{
+	background-image:url(./img/bg2.jpg);
+	background-size:100%;
+	padding: 80px 130px;
+}
+
+.ground3{
+	text-align:center;
+	padding:25px;
+	background-color:transparent;
+}
+
+article{
+	float:left;
+	width:390px;
+	padding:20px;
+	background-image:transparent;
+	background-attachment:fixed;
+}
+
+.borderbg{
+	border: 1px solid #ff0000;
+	background:linear-gradient(#ffb245,transparent);
+	margin-top:15px;
+	border-radius:5px;
+}
+
+h3, p{
+	margin:7px;
+	color:#fff;
+}
+
+article, img{
+	border-radius:10px;
+	text-align:center;
+}
+
+
+/*kontakt*/
+
+.kontakt{
+	padding: 30px 0px;
+	color:#fff;
+	float:left;
+	text-align:center;
+	margin:0px 550px;
+	
+}
+
+.edit{
+	background-image:linear-gradient(150deg,#402808,transparent);
+	width:200px;
+	padding:15px;
+	line-height:20px;
+	border-radius:15px;
+}
+
+u{
+	text-align:left;
+}
+
+/*footer*/
+
+footer{
+	float:left;
+	text-align:center;
+	width:100%;
+	padding:40px 0px;
+	background-image:url(./img/bg2.jpg);
+	background-attachment:scroll;
+}
+
+h4{
+	margin: 15px 30px;
+	color:#fff;
+}
+
