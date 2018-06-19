@@ -44,7 +44,7 @@ values(1,'Adam_konto', 'uzytkownik1@gmail.com', 123456),
 select * from Rejestracja_kli;
 
 insert into Logowanie_table_kli
-values(1, 'Dawid_konto', 2344543635);
+values(1, 'Balbuna_konto', 2344543635);
 select * from Logowanie_table_kli;
 
 insert into pizzy
