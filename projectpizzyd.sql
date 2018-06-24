@@ -97,49 +97,45 @@ show tables;
 describe pizzy;
 select * from pizzy;
 
-/*PIZZY_PROJECT */
+/*Cwicenie::*/
 
-# 1) Wypisz pizzy sumie ile litery zawierają!?
+# 1)
 select Nazwa, length(Nazwa) as 'Liczba litery ' from pizzy;
 
-# 2) Wypisz te pizzy który zawierają litery "C"!?
+# 2)
 select Id_pizzy, Nazwa, locate('c',Nazwa) as 'Zawiera "c": ' from pizzy;
 
-# 3) Wypisz jedną ulubianą pizzy 6 razy!?
+# 3)
 select repeat(Nazwa, 6) as 'Nazwa Pizzy 6_razy ' from Pizzy;
 
-# *4) Wypisz pierwszy 2 litery!?
+# *4)
 select left(Nazwa, 2) as 'Paragraph wypisane ' from Pizzy;
 
-# 5) Wypisz klienta_nazwe spowrotem w tablicu zamowiania?
-# tablica razem!?
+# 5)
 select Nazwa_uz, reverse(Nazwa_uz) as 'Przecziwnie_nazwa ' from zamowienia;
 
-# 6) Podaj wielkości rozmiary!?
+# 6)
 select count(*) Rozmiary, Nazwa from pizzy
 group by Rozmiary;
 
-# 7)  Wypisz listę klientów w formacie klient_nazwa, ulica (cena),
-# np. “ Jacek (Cena) ”!?
+# 7)
 select Nazwa_uz, Ulica, Cena
 from zamowienia z
 where Cena>(select Cena from zamowienia where Nazwa_uz='Jacek ');
 
-# 8) Policz, jaka jest średnia rozmiary pizzy!?
+# 8)
 select avg(dane.suma) as 'Pizzy_Cena_avg '
 from(select (Cena) suma from zamowienia) as dane; 
 
-# 9) Wypisz listę zamowienia w formacie Nazwa_uz, Ulica, Miejscowosc, Cena,
-# np. “ Nazwa_uz Ulica Miejscowosc (Cena) ”. !?
+# 9)
 select Nazwa_uz, Ulica, Miejscowosc, Cena, concat(Nazwa_uz ,'',Ulica ,'', Miejscowosc, ' (',Cena,'Zł)') as 'W jednym colummn' from zamowienia;
  
-# 10) Podaj ilości Rozmiary wyższych niż 30cm, a pozatym,
-# Podaj ilości Ceny ktróy miedzy 24 oraz 30 liczbe zawieraja!?
+# 10)
 select Nazwa, Rozmiary, Cena
 from (select * from pizzy where Rozmiary >32) as z1
 where Cena between 24 and 30; 
 
-# 11) Dodane TRIGGERA
+# 11)
 create trigger Reg_BeforeInsert
 before insert on Rejestracja_kli
 	for each row
@@ -148,10 +144,9 @@ before insert on Rejestracja_kli
 insert into Rejestracja_kli values(4,'Zoszia_konto', 123459);
 select * from Rejestracja_kli order by password desc;
 
-# Skasowanie TRIGGERA
 drop trigger Reg_BeforeInsert;
 
-# 12) Dodane TRIGGERA
+# 12)
 create trigger Reg_pizzy
 before insert on pizzy
 	for each row
@@ -160,7 +155,7 @@ before insert on pizzy
 insert into pizzy values(14, 'Wiosenna', 18, 28);
 select * from pizzy group by Cena;
 
-# 13) TRIGGERA delimiter
+# 13)
 
 delimiter //       
 
@@ -174,8 +169,7 @@ end if;
 
 // 
 
-# 14) W Zadaniu usunięcie TRIGGERA tablice Mod_pizzy
-# Usunięcie TRIGGERA
+# 14)
 
 drop trigger Mod_pizzy;
 
