@@ -1,46 +1,23 @@
 package cwiczeniaj18;
 
 public class Samochod {
+    public static void main(String[] args) {
 
-    private String marka;
-    private int rocznik;
-    private String typpaliwy;
-    private int paliwo;
+        Samochod2 auto = new Samochod2();
 
-    // Marka auta
-    public void writeName() {
-        System.out.println("Samochod marka " + this.marka);
-    }
+        auto.setMarka("VOLVO");
+        auto.setRocznik(2015);
+        auto.setTyppaliwy("Benzyna");
+        auto.setPaliwo(9);
 
-    public String getMarka() {
-        return marka;
-    }
+        System.out.println("Dane techniczne samochod: ");
+        System.out.println("-------------------------\n");
 
-    public void setMarka(String marka) {
-        this.marka = marka;
-    }
-
-    public int getRocznik() {
-        return rocznik;
-    }
-
-    public void setRocznik(int rocznik) {
-        this.rocznik = rocznik;
-    }
-
-    public String getTyppaliwy() {
-        return typpaliwy;
-    }
-
-    public void setTyppaliwy(String typpaliwy) {
-        this.typpaliwy = typpaliwy;
-    }
-
-    public int getPaliwo() {
-        return paliwo;
-    }
-
-    public void setPaliwo(int paliwo) {
-        this.paliwo = paliwo;
+        if (auto.getMarka() + auto.getRocznik() + auto.getTyppaliwy() + auto.getPaliwo() == null){
+            System.out.println("brak samochodu dane");
+        } else {
+            System.out.println("Marka samochodu: " + auto.getMarka() + "\n" + "Rocznik samochodu: " + auto.getRocznik());
+            System.out.println("Typ paliwa: " + auto.getTyppaliwy() + "\n" + "Paliwo auta: " + auto.getPaliwo() + "l");
+        }
     }
 }
