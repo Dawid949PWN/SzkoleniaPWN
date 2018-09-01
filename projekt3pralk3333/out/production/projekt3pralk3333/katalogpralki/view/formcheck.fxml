@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="katalogpralki.controller.checkform"><children>
+      <AnchorPane focusTraversable="true" layoutX="301.0" layoutY="202.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="129.0">
+         <children>
+            <Label fx:id="twojeimie" layoutX="36.0" layoutY="19.0" text="TWOJE IMIE" />
+            <Label fx:id="twojenazwisk" layoutY="97.0" text="TWOJE NAZWISKO" />
+            <Label fx:id="modelnazw" layoutX="17.0" layoutY="46.0" prefHeight="17.0" prefWidth="101.0" text="MODEL_NAZWE" />
+            <Label fx:id="pocztmail" layoutX="34.0" layoutY="71.0" prefHeight="17.0" prefWidth="67.0" text="NUMER_TEL" />
+            <Label fx:id="numertel" layoutX="17.0" layoutY="120.0" text="POCZTA_MAILA" />
+         </children>
+      </AnchorPane>
+      <TextFlow layoutX="410.0" layoutY="219.0" prefHeight="175.0" prefWidth="181.0">
+         <children>
+            <Label fx:id="lbl_imie" prefHeight="25.0" prefWidth="183.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_model" prefHeight="25.0" prefWidth="184.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_tel" prefHeight="25.0" prefWidth="185.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_nazwisko" prefHeight="25.0" prefWidth="187.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_email" prefHeight="25.0" prefWidth="186.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextFlow>
+      <ImageView fitHeight="322.0" fitWidth="441.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/tlo/tlo_1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

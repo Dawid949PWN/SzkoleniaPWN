@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="katalogpralki.controller.form">
+    <children>
+        <ImageView fitHeight="676.0" fitWidth="1031.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/bosch/bosch_4.jpg" />
+            </image>
+         <effect>
+            <GaussianBlur radius="12.25" />
+         </effect>
+        </ImageView>
+        <AnchorPane layoutX="-16.0" prefHeight="674.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <AnchorPane layoutX="240.0" layoutY="177.0" prefHeight="505.0" prefWidth="790.0">
+               <children>
+                   <Button accessibleRole="HYPERLINK" alignment="CENTER" defaultButton="true" layoutX="562.0" layoutY="418.0" mnemonicParsing="false" onAction="#openstg" prefHeight="48.0" prefWidth="187.0" text="Zapisz">
+                       <font>
+                           <Font name="SansSerif Regular" size="18.0" />
+                       </font>
+                       <effect>
+                           <InnerShadow />
+                       </effect>
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                   </Button>
+                  <TextField fx:id="lab_imie" layoutX="434.0" layoutY="82.0" prefHeight="40.0" prefWidth="338.0" style="-fx-background-radius: 20;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="lab_nazwsk" layoutX="434.0" layoutY="145.0" prefHeight="40.0" prefWidth="338.0" style="-fx-background-radius: 20;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="lab_mod" layoutX="433.0" layoutY="202.0" prefHeight="40.0" prefWidth="338.0" style="-fx-background-radius: 20;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Label layoutX="268.0" layoutY="77.0" prefHeight="46.0" prefWidth="133.0" text="Podaj Imie">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#424242" />
+                              <Stop color="#424242" offset="0.4329501915708812" />
+                              <Stop color="WHITE" offset="0.8007662835249042" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="250.0" layoutY="146.0" text="Podaj Nazwe" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lab_email" layoutX="430.0" layoutY="258.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="338.0" style="-fx-background-radius: 20;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="219.0" layoutY="257.0" text="Podaj Email /@" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label>
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="222.0" layoutY="202.0" prefHeight="38.0" prefWidth="177.0" text="Nazwa Modelu" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lab_tel" layoutX="429.0" layoutY="319.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="338.0" style="-fx-background-radius: 20;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="286.0" layoutY="322.0" text="Podaj Tel" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="214.0" fitWidth="277.0" layoutX="-4.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/elektrolux/elektrolux_4.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="24.0" layoutY="382.0" text="Bosch_model_5465765" textFill="#5e50e8">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="214.0" fitWidth="277.0" layoutX="44.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bosch/res_011b4047448e011b2036310ee9c21f7c_full.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="235.0" layoutY="86.0" prefHeight="30.0" prefWidth="254.0" text="Whirpool_model_5465765" textFill="#5e50e8">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="214.0" fitWidth="277.0" layoutX="13.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/whirpool/whirpool2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="4.0" layoutY="321.0" prefHeight="30.0" prefWidth="268.0" text="Ews11064_model_grehtrew" textFill="#5e50e8">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            </children>
+
+        </AnchorPane>
+    </children>
+</AnchorPane>

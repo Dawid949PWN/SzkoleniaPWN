@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="katalogpralki.controller.elektromod2">
+    <children>
+      <ImageView fitHeight="412.0" fitWidth="1258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/elektrolux/tloel.jpg" />
+         </image>
+      </ImageView>
+        <AnchorPane focusTraversable="true" layoutX="28.0" layoutY="3.0" prefHeight="674.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="543.0" fitWidth="387.0" layoutX="632.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/elektrolux/electrolux_2.jpg" />
+                    </image>
+                </ImageView>
+            <TextFlow layoutX="17.0" layoutY="385.0" prefHeight="198.0" prefWidth="474.0">
+                        <padding>
+                            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                        </padding>
+                        <children>
+                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pralka Electrolux UltraCareTM Eco z systemami UltraMix i OptiSense, która zapewnia idealnie czyste i miękkie pranie – już w temperaturze 30°C, funkcja DirectSpray, pojemność 9 kg, klasa A+++." wrappingWidth="419.9404296875">
+                                <font>
+                                    <Font size="22.0" />
+                                </font>
+                            </Text>
+                        </children>
+                    </TextFlow>
+                <Button fx:id="btn_user_back" defaultButton="true" layoutX="45.0" layoutY="599.0" mnemonicParsing="false" onMouseClicked="#userBackAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #fff4aa;" text="Wztecz">
+                    <font>
+                        <Font name="Javanese Text" size="14.0" />
+                    </font></Button>
+            <ImageView fitHeight="205.0" fitWidth="316.0" layoutX="706.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/elektrolux/elektropral6564354.jpg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

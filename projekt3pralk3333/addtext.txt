@@ -1,0 +1,154 @@
+public class Main extends Application
+{
+    @Override
+    public void start(Stage primaryStage) throws Exception
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("frmLogin.fxml"));
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("JavaFX GUI");
+        primaryStage.setResizable(false);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args)
+    {
+        Application.launch(args);
+    }
+}
+
+. . .
+
+public class LoginController
+{
+
+    @FXML
+    private TextField txtUsername;
+    @FXML
+    private TextField txtPassword;
+
+
+    @FXML
+    private void btnLogin_Clicked(ActionEvent e) throws Exception
+    {
+        if (txtUsername.getText().equals("admin") && txtPassword.getText().equals("pass"))
+        {
+            Messagebox.Show("Correct Login!");
+        }
+        else
+        {
+            Messagebox.Show("Incorrect Login");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.............................................................................................................
+
+
+
+
+
+public class Main extends Application
+{
+    @Override
+    public void start(Stage primaryStage) throws Exception
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("frmLogin.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("JavaFX GUI");
+        primaryStage.setResizable(false);
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args)
+    {
+        Application.launch(args);
+    }
+}
+
+
+
+public class LoginController
+{
+
+    @FXML
+    private TextField txtUsername;
+    @FXML
+    private TextField txtPassword;
+
+
+    @FXML
+    private void btnLogin_Clicked(ActionEvent e) throws Exception {
+
+        if (txtUsername.getText().equals("admin") && txtPassword.getText().equals("pass"))
+        {
+            Messagebox.Show("Correct Login!");
+
+            // I don't really know what you were trying to do here
+            // but if you need a reference to the window containing the
+            // associated fxml elements, you can get it from one of those
+            // elements:
+
+            Stage stage = (Stage) txtUsername.getScene().getWindow();
+
+            //this.show(); //The problem occurs here!
+        }
+        else
+        {
+            Messagebox.Show("Incorrect Login");
+        }
+    }
+}
+
+
+
+
+
+
+
+public class LoginController {
+
+    @FXML
+    private TextField txtUsername;
+    @FXML
+    private TextField txtPassword;
+
+
+    @FXML
+    private void btnLogin_Clicked(ActionEvent e) throws Exception
+    {
+        if (txtUsername.getText().equals("admin") && txtPassword.getText().equals("pass"))
+        {
+            Messagebox.Show("Correct Login!");
+
+            Scene currentScene = txtUsername.getScene();
+
+            Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+            currentScene.setRoot(root);
+
+            // resize window:
+            currentScene.getWindow().sizeToScene(); 
+        }
+        else
+        {
+            Messagebox.Show("Incorrect Login");
+        }
+    }
+}
